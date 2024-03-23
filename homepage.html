@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-introduction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- BootstrP CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style type="text/css">
+      
+        
+#a :hover{
+    color: rgb(14, 160, 14);
+   
+    
+}
+
+
+.nav-item :hover{
+    
+   background-color:  rgb(42, 204, 42);
+   border-radius: 60px;
+   color: aliceblue;
+}
+.a{
+  background-image: url(https://wallpaperaccess.com/full/4477463.png);
+  background-size: contain;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: max-content;
+     
+   
+}
+.b{
+  border: 2 black;
+  box-shadow: 8pc;
+    width: 240px;
+    height: 400px;
+    background-color: rgb(193, 169, 169);
+    margin: 10px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 60px;
+    height: max-content;
+       
+}
+.a :hover{
+    
+   width: 370px;
+    transition: 2s; 
+}
+.l{
+  border: 2 black;
+  box-shadow: 8pc;
+    width: 230px;
+    height: 400px;
+    background-color: rgb(193, 169, 169);
+    margin: 10px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 60px;
+    height: max-content;
+       
+}
+.l :hover{
+    
+    width: 370px;
+     transition: 2s; 
+ }
+.g{
+  margin-top: 15px;
+  margin-left:20px;
+  position: relative;
+  margin-top: -70px;
+  text-align: center;
+  color:black;
+  font-weight: bolder;
+  align-items: center;
+}
+footer {
+    background-color: #7f1717;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-section.social {
+    flex-basis: 20%;
+    margin-left: 115px;
+}
+
+.footer-section.social a {
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-section.social a:hover {
+    background-color: #473838;
+    color: #fff;
+}
+.om{
+  color: orange;
+}
+
+
+
+
+
+   .sections{
+    height: 650px;
+    width: 100%;
+   background-image: url(https://i.pinimg.com/564x/52/42/15/524215298396c52a4e416d1be4b7c431.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   } 
+   .wrapper{
+    height: 300px;
+    width: 180px;
+    border: 5px  solid black;
+    position: relative;
+    
+    margin: 3%;
+    flex-wrap: wrap;
+   }
+   img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+   }
+   .door{
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+   #left{
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    transform-origin: left;
+    transition: 2s;
+   }
+   #right{
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    transform-origin: right;
+    transition: 2s;
+   } 
+   .wrapper:hover #left{
+    transform: rotateY(-140deg);
+   }
+   .wrapper:hover #right{
+    transform: rotateY(140deg);
+   }
+.card{
+  border-radius: 90px;
+  
+}
+   
+   .card:hover{
+   color: white;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+   }
+   .btn{
+    background-color: black;
+   }
+
+   
+   .form-container {
+background-color: rgb(59, 58, 56);
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+  color: aliceblue;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box
+}
+    
+
+
+
+
+
+
+
+
+
+
+.parallax
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 130vh;
+background-color: #000000;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#text
+{
+    position: absolute;
+    font-size: 6em;
+    color:#ffffff;
+    text-shadow: 2px 4px 5px #000000;
+}
+
+.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#mountains 
+{
+    transform: translateY(400px);
+}
+
+.parallax img#cloud-right
+{  
+    position: fixed;
+    transform: translateY(-500px);
+   
+}
+
+.parallax img#cloud-left
+{ 
+    padding-top: 250px;
+    position: fixed;
+    height: 830px;
+    width: 1300px;
+    transform: translateY(-100px);
+    padding-left: 1050px;
+
+}
+
+.sec
+{
+    position: relative;
+    background:#173F5F;
+    padding: 70px 200px;
+}
+
+.sec h2
+{
+    font-size: 3em;
+    color:#fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: justify;
+    color:#f9f9f9;
+}
+   
+
+.para{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        color: whitesmoke;
+        text-shadow: 2px 2px 2px black;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    #bg-1{
+
+        background-image: url(https://b.zmtcdn.com/data/pictures/5/20620725/41eef92d372ab0cdd7d3aeabb54b9f4b_featured_v2.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+    #bg-2{
+
+background-image: url(https://i.pinimg.com/564x/ce/ef/14/ceef14fb1f3d42bab3dd01321bf74296.jpg);
+width: 100%;
+height: 100vh;
+}
+#bg-3{
+
+background-image: url(https://i.pinimg.com/564x/2b/38/0c/2b380ca0eac2ce0eb100db2d95a66a4c.jpg);
+width: 100%;
+height: 100vh;
+}
+#bg-4{
+
+background-image: url(https://i.pinimg.com/564x/7c/fd/dd/7cfdddbc3f445ab27296c673d4af1a7f.jpg);
+width: 100%;
+height: 100vh;
+}
+
+
+
+
+
+.parallax
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 130vh;
+    min-width: 100vh;
+background-color: #000000;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#text
+{
+    position: absolute;
+    font-size: 6em;
+    color:#ffffff;
+    text-shadow: 2px 4px 5px #000000;
+}
+
+.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#mountains 
+{
+    transform: translateY(400px);
+}
+
+.parallax img#cloud-right
+{  
+    position: fixed;
+    transform: translateY(-500px);
+   
+}
+
+.parallax img#cloud-left
+{ 
+    padding-top: 250px;
+    position: fixed;
+    height: 830px;
+    width: 1300px;
+    transform: translateY(-100px);
+    padding-left: 900px;
+
+}
+
+.sec
+{
+    position: relative;
+    background:#173F5F;
+    padding: 70px 200px;
+}
+
+.sec h2
+{
+    font-size: 3em;
+    color:#fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: justify;
+    color:#f9f9f9;
+}
+body{
+  min-width: 140vh;
+}
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+
+
+ 
+
+
+</style>
+</head>
+<body style="background-image: url(https://i.pinimg.com/236x/c3/dd/c9/c3ddc9377bb8e08eb2f6bed6c4e2c744.jpg);">
+  
+    <nav class="navbar navbar-expand-lg " style="background-color: rgb(40, 38, 35);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h2 style="margin-left: 60px;" class="logo" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"><b><span style="color: rgb(255, 255, 255);"> FOOD</span><span style="color: rgb(49, 180, 180);">-E</span> <BR>&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 252, 252);"> BUDDY</span><span style="color: rgb(42, 170, 170);">-E</span></b></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa-solid fa-burger fa-2x"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: large;text-align: center;">
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+              <li class="nav-item">
+                <a class="nav-link active"  href="#"><b style="color: aqua;">Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#dishuz"><b style="color: aqua;">Dishes</b></a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active" href="#restuz"><b style="color: aqua;">Restuarents</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#reviuws"><b style="color: aqua;">Review</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active"  href="#orderz"><b style="color: aqua;">Order</b></a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search" id="a" style="justify-content: center;color: #fff;">
+             <i class="fa-solid fa-location-dot fa-2x" onclick="showAlert()"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.swiggy.com/" style="color: white;">  <i class="fa-solid  fa-cart-shopping fa-2x"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.swiggy.com/collections/94967?collection_id=94967&tags=layout_BAU_Contextual%2Cappam%2Clayout_ux4&type=rcv2 " style="color: white;"> <i class="fa-regular fa-heart fa-2x"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      
+    
+
+    
+    <section class="parallax">
+      <h2 style="padding-bottom: 410px;padding-right: 660px;position: fixed;flex-wrap: wrap;" id="text">EAT WELL <br> TRAVEL <br>OFTEN..
+       </h2 >
+      
+          <img src="./burger.png" alt="" style="padding-top: 30px;padding-left: 620px; height: 700px;width: 1020px;">
+     
+  
+      <img src="./fork and knife.png" id="cloud-left" >
+      <img src="" id="cloud-right"style="padding-top: 580px;  ">
+  
+      
+  </section>
+    <script src="logic.js"></script>
+
+
+
+
+
+
+
+      
+      <div class="para" id="bg-1">
+        <section style="display: flex;flex-wrap: wrap;">
+          <div class="container px-4 text-center" style="padding-bottom:300px;">
+            <div class="row gx-5"> 
+              <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" class="col">
+               <div class="p-4"><h1   style="font-weight: 600;font-family: fantasy;font-size: 120px;"><br> Enjoy Our<br>Delicious Meal</h1>
+                <button style="background-color: rgb(255, 190, 69);border-radius: 35px;border-color: orange"><a href="https://www.freshmenu.com/" style="text-decoration: none;"> Get A Table</a></button></div>
+              </div>
+             
+            </div>
+          </div>
+
+        </section>
+    </div>
+    <div class="para" id="bg-2">
+      <section style="display: flex;flex-wrap: wrap;">
+        <div class="container px-4 text-center" style="padding-bottom:300px;">
+          <div class="row gx-5"> 
+            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" class="col">
+             <div class="p-4"><h1   style="font-weight: 600;font-family: fantasy;font-size: 120px;"><br><br>  Order Products<br>Faster Easier</h1>
+              <p>  Order your favourite foods at any time<br>and we will deliver them right to where you are</p>
+              <button style="background-color: rgb(255, 190, 69);border-radius: 35px;border-color: orange"><a href="https://www.freshmenu.com/" style="text-decoration: none;"> Get Started</a></button></div>
+            </div>
+           
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="para" id="bg-3">
+      <section style="display: flex;flex-wrap: wrap;">
+        <div class="container px-4 text-center" style="padding-bottom:300px;">
+          <div class="row gx-5"> 
+            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" class="col">
+             <div class="p-4"><h1   style="font-weight: 600;font-family: fantasy;font-size: 120px;"><br><br> Find Out A Little More<br>About Us</h1> <p><br>We are a company dedicated to the distibution <br> of products by delivery your home or to the<br> place where you are,with the best quality of delivery</p>
+              <button style="background-color: rgb(255, 190, 69);border-radius: 35px;border-color: orange"><a href="https://www.freshmenu.com/" style="text-decoration: none;"> Get Started</a></button></div>
+            </div>
+           
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="para" id="bg-4">
+      <section style="display: flex;flex-wrap: wrap;">
+        <div class="container px-4 text-center" style="padding-bottom:300px;">
+          <div class="row gx-5"> 
+            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" class="col">
+             <div class="p-4"><h1   style="font-weight: 600;font-family: fantasy;font-size: 120px;"><br><br>   Your Safety is<br>Important</h1>
+              <p>       When your order reaches you,we have the health<br>safety protocols,so that you are protected from<br>any diseases.Watch the video of how the delivery is made <br>
+              </p>
+              <button style="background-color: rgb(255, 190, 69);border-radius: 35px;border-color: orange"><a href="https://www.freshmenu.com/" style="text-decoration: none;"> Get Started</a></button></div>
+            </div>
+           
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+<section id="dishuz" >
+
+<b><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;padding-top: 120px;color: white;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" ><b>_____*Mandhi Specials*_____</b></h1><br><br>
+      <section class="a" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><br><br>
+        <div class="b"><img src="./kanthari.png" class="l"><br><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;<br>Kandhari Mandhi &nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+        <div class="b"><img src="./kuzhyi mandhi.png" class="l"><h4 class="g" ><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuzhi Mandhi &nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+        <div class="b"><img src="./alfarm.png" class="l"  ><br><h4 class="g" ><br>&nbsp;&nbsp;Alfarm Mandhi&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+       
+       <div class="b"><img src="./peri.png" class="l"><h4 class="g" ><br><br>Peri-Peri Mandhi &nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+        <div class="b"><img src="./zurbianz.png" class="l"><h4 class="g" ><br><br>&nbsp;&nbsp;Zurubian Mandhi <br> <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div><br><br><br>
+        
+      </section><br><br><br> 
+
+      <br><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;color: white;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><b>_____*Beef Specials*_____</b></h1><br><br>
+      <section class="a" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><br><br>
+      
+       <div class="b"><img src="./steak.png" class="l"  ><h4 class="g" >&nbsp;&nbsp;&nbsp; Roasted Steak&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+       <div class="b"><img src="./thava.png" class="l"><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;Thava Mandhi &nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+       <div class="b"><br><br><img src="./bdf.png" class="l"><br><h4 class="g"  ><br><br>&nbsp;&nbsp;&nbsp; Beef Deep Fry &nbsp; &nbsp;&nbsp;<span style="color: rgb(0, 0, 0)">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+        <div class="b"><img src="./beef roast.png" class="l"><br><h4 class="g" ><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Beef Roast <br> &nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+        <div class="b"><img src="./beef curry.png"class="l"><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beef Curry &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+        <br><br><br>
+        
+      </section><br><br><br> 
+
+
+      
+
+
+      <br><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;color: white;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><b>_____*Mutton Specials*_____</b></h1><br>
+      
+      <br><br><br>
+            <section class="a" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><br><br><br>
+              <div class="b"><img src="./ribs.png" class="b"><h4 class="g" ><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Roasted Ribs&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+              
+              
+              <div class="b"><img src="./stew.png" class="b"><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;spicy stew curry  &nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+              <div class="b"><img src="./bmm.png" class="b"><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;Mutton Biriyani  &nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+              <div class="b"><img src="./bm.png" class="b"><h4 class="g" ><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Mutton Mandhi  &nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h4></div>
+              <div class="b"><img src="./chops.png" class="b"><h4 class="g" >&nbsp;&nbsp;&nbsp;&nbsp;Mutton Chops  &nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(0, 0, 0)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+              <br><br><br>
+              
+            </section><br><br><br><br>
+
+
+            <br><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;color: white;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><b>_____*Milk Shakes*_____</b></h1><br>
+      
+            <br><br><br>
+                  <section class="a" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><br><br><br>
+                    <div class="b"><img src="./oreo.png" class="b"><h4 style="color: white;" class="g" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oreo Elixer &nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+                    <div class="b"><img src="./choco delight.png" class="b"><h4 style="color: white;" class="g" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choco Delight &nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+                    <div class="b"><img src="./cream cup.png" class="b"><h4 style="color: white;" class="g" >&nbsp;&nbsp;&nbsp;&nbsp;Cream Cup &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+                    <div class="b"><img src="./pinha cholada.png" class="b"><h4 style="color: white;" class="g" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pinha cholads &nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+                    <div class="b"><img src="./vanila punch.png" class="b"><h4 style="color: white;" class="g" >&nbsp;&nbsp;&nbsp;Vanila Punch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></h4></div>
+                    <br><br><br>
+                    </section>
+                </section> <br><br>
+
+
+<section style="background-image: url(https://i.pinimg.com/236x/ba/b0/f2/bab0f2008fb1cefe86c46f109d9d5efa.jpg);" id="restuz">
+                <b><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;padding-top: 120px;color: rgb(0, 0, 0);" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" ><b>_________*NEARBY RESTUARENTS*_____</b></h1><br><br>
+                
+                <div style="display: flex; justify-content: space-between;flex-wrap: wrap; margin: 8%;margin-left: 80px;"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+
+
+    <div class="card" style="width: 17rem;height: 22rem;">
+      <img src=https://b.zmtcdn.com/data/pictures/0/20443880/7c0cbffdfdbd3aa25cdfcd4d1d82c54e.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,* class="card-img-top" style="height: 160px;">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> AL-Halal RESTUARENT</h5>
+        <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+       <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary" style="padding-top: -28px;">ORDER NOW</a><br></center>
+      </div>
+    </div><br><br><br>
+
+    <div class="card" style="width: 17rem;height: 22rem;">
+      <img src=https://b.zmtcdn.com/data/pictures/2/20291162/4ecaf67421890d4c737e98b6df454cb1_o2_featured_v2.jpg  alt="..."  style="height: 160px;">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>AL-NOOR RESTUARENT</h5>
+        <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+       <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary">ORDER NOW</a></center><br>
+      </div>
+    </div><br><br><br>
+
+    <div class="card" style="width: 17rem;height: 22rem;">
+      <img src=https://b.zmtcdn.com/data/pictures/2/21000152/60bb60f10f77329b009a8fc7336020b3.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*  alt="..."  style="height: 160px;">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>GOKUL-00TUPURA</h5>
+        <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+       <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary">ORDER NOW</a></center><br>
+      </div>
+    </div><br><br><br>
+
+    
+
+    
+
+    
+
+  </div>
+
+
+
+
+    <div style="display: flex; justify-content: space-between;flex-wrap: wrap; margin: 4%;margin-left: 80px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+      <div class="card" style="width: 17rem;height: 22rem;">
+        <img src=https://b.zmtcdn.com/data/pictures/6/19713426/b754ae2312380b3808ace532ae07f5d6_o2_featured_v2.jpg  alt="..."  style="height: 160px;">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> AHALAN- MANDHI</h5>
+          <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+         <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary">ORDER NOW</a></center><br>
+        </div>
+      </div><br><br><br>
+
+      <div class="card" style="width: 17rem;height: 22rem;">
+        <img src=https://b.zmtcdn.com/data/pictures/9/21063859/1b9eb24cdc1aa9ec77f7e47c3a2b5ddf_o2_featured_v2.jpg  alt="..."  style="height: 160px;">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> AJWA - FOOD COURT</h5>
+          <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+         <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary">ORDER NOW</a></center><br>
+        </div>
+      </div><br><br><br>
+
+      <div class="card" style="width: 17rem;height: 22rem;">
+        <img src=https://b.zmtcdn.com/data/pictures/3/20950663/8d9c6319b44b32b98dc7161df547806b_featured_v2.jpg?output-format=webp  alt="..."  style="height: 160px;">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> NIRO-BY-NINO'S</h5>
+          <p class="card-text"><center> <span style="color: rgb(255, 255, 255)" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></center>
+         <center> <a href="https://www.zomato.com/goa/al-halal-biryani-mahal-baga" class="btn btn-primary">ORDER NOW</a></center><br>
+        </div>
+      </div><br><br><br>
+
+      <br>
+
+  </div>
+   
+    
+
+  
+      <br><br>
+      </section>
+                <b><h1 id="reviuws" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;padding-top: 160px;color: aliceblue;color: rgb(255, 255, 255);" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" ><b >_____*Top Reviews*_____</b></h1><br><br><br>
+                <div class="sections" >
+                   
+               <div class="wrapper" style="background-color: rgb(254, 255, 255);" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <h5 style="color: rgb(220, 147, 13); text-align: center ;">Matt LeBlanc
+                     <br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+            
+                    <img src=https://tse2.mm.bing.net/th?id=OIP.iMFAr-guIjlJ4tQUmXBARAHaJj&pid=Api&P=0&h=180 alt="">
+                   <h6 style="color: black;"> "Let food be thy medicine and medicine be thy food"</h6>
+            
+                <div class="door" id="left" style="background-image: url(https://i.pinimg.com/564x/7c/d3/d6/7cd3d69cbc96f146a38b7e7698c53af9.jpg);">
+                    
+                </div>
+                <div class="door" id="right" style="background-image: url(https://i.pinimg.com/564x/7c/d3/d6/7cd3d69cbc96f146a38b7e7698c53af9.jpg);">
+            
+                </div>
+               </div> 
+            
+               <div class="wrapper" style="background-color: rgb(65, 157, 183);"data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <h5 style="color: rgb(220, 147, 13); text-align: center ;">Jennifer Aniston
+                     <br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+                    <img src=https://th.bing.com/th?id=OSK.OHnkWO581ppVGQcAlaTu0AHaKe&w=224&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM alt="">
+                   <h6 style="color: black;">  "Promises and pie-crust are made to be broken”</h6>
+                <div class="door" id="left" style="background-image: url(https://i.pinimg.com/564x/39/a0/c4/39a0c4ab55ca68aa2bd24bd6ecec6672.jpg);"> 
+                </div>
+                <div class="door" id="right" style="background-image: url(https://i.pinimg.com/564x/39/a0/c4/39a0c4ab55ca68aa2bd24bd6ecec6672.jpg);">
+                </div>
+               </div> 
+            
+               <div class="wrapper" style="background-color: antiquewhite;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <h5 style="color: rgb(220, 147, 13); text-align: center ;">Courteney Cox
+                     <br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+                    <img src=https://image.tmdb.org/t/p/original/kn18TzC3JVUMqnJn5nYqBo7nybR.jpg alt="">
+                   <h6 style="color: black;">   "The secret of being a good actor is the love for food”</h6>
+                <div class="door" id="left" style="background-image: url(https://i.pinimg.com/564x/7e/78/e6/7e78e6b0ca42f389b002d6ed3d840af7.jpg);"> 
+                </div>
+                <div class="door" id="right" style="background-image: url(https://i.pinimg.com/564x/7e/78/e6/7e78e6b0ca42f389b002d6ed3d840af7.jpg);">
+                </div>
+               </div> 
+            
+               <div class="wrapper" style="background-color: rgb(240, 211, 176);"data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <h5 style="color: rgb(220, 147, 13); text-align: center ;">Matthew Perry
+                     <br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+                    <img src=https://www.bing.com/th/id/OIP.hjJdtJNphDSQv7LqDto7RgHaJp?w=135&h=180&c=7&r=0&o=5&cb=10&dpr=1.3&pid=1.7 alt="">
+                   <h6 style="color: black;">  "Your diet is a bank account. Good food choices are good investments"</h6>
+                <div class="door" id="left" style="background-image: url(https://i.pinimg.com/564x/b1/a7/90/b1a7903da6d1505dc41299f6d9efd3dc.jpg);"> 
+                </div>
+                <div class="door" id="right" style="background-image: url(https://i.pinimg.com/564x/b1/a7/90/b1a7903da6d1505dc41299f6d9efd3dc.jpg);">
+                </div>
+               </div>
+            </div><br>
+
+
+
+            <b><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;padding-top: 160px;color: #fff;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" id="orderz" ><b>_____*PLACE ORDER*_____</b></h1><br><br>
+
+            <div class="form-container">
+              <h1>Order Food Now!</h1>
+              <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="address">Delivery Address:</label><br>
+                <textarea id="address" name="address"></textarea><br>
+                <label for="food">Payment Method:</label><br>
+                <center><select id="food" name="food">
+                  <option value="pizza">Google Pay</option>
+                  <option value="burger">Credi Card</option>
+                  <option value="pasta">Cash on Delivery</option>
+                </select></center><br><br><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Open Cart!" style="background-color: #18973a;color: #fff;border-radius: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+               <input type="submit" value="Order Now!" style="background-color: #188897;color: #fff;border-radius: 50px;">
+              </form>
+            </div>
+
+
+<br><br><br><br>
+                  <center><footer>
+                    <div class="footer-content">
+                        <div class="footer-section about">
+                            <h2 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000" class="om">About Us</h2>
+                            <p>Welcome to our restaurant, where we serve delicious food and provide excellent service. Come and visit us today!</p>
+                        </div>
+                        <div class="footer-section contact">
+                            <h2 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000" class="om">Contact Us</h2>
+                            <p>Kakkanad JN,KOCHI</p>
+                            <p>Phone: (123) 456-7890</p>
+                            <p>Email: FOOD-E BUDDY-Eo@restaurant.com</p>
+                        </div> <center>
+                       <div class="footer-section social">
+                            <h2 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000" class="om">Follow Us</h2>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div></center>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 FOOD-E BUDDY-E. All rights reserved.</p>
+                    </div>
+                </footer></center>
+</body>
+<script>
+  function showAlert() {
+    var location = prompt("Please enter your current location:");
+    alert("You selected " + location + " as your current location.");
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+</html>

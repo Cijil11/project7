@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style type="text/css">
+   *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body
+{
+    min-height: 100vh;
+}
+
+
+
+.parallax
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 150vh;
+background-color: #000000;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#text
+{
+    position: absolute;
+    font-size: 6em;
+    color:#ffffff;
+    text-shadow: 2px 4px 5px #000000;
+}
+
+.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#mountains 
+{
+    transform: translateY(400px);
+}
+
+.parallax img#cloud-right
+{  
+    position: fixed;
+    transform: translateY(-500px);
+   
+}
+
+.parallax img#cloud-left
+{ 
+    padding-top: 250px;
+    position: fixed;
+    height: 830px;
+    width: 1300px;
+    transform: translateY(-100px);
+    padding-left: 1000px;
+
+}
+
+.sec
+{
+    position: relative;
+    background:#173F5F;
+    padding: 70px 200px;
+}
+
+.sec h2
+{
+    font-size: 3em;
+    color:#fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: justify;
+    color:#f9f9f9;
+}
+   
+</style>
+<body>
+    
+
+    
+
+    <section class="parallax">
+        <h2 style="padding-bottom: 410px;padding-right: 660px;position: fixed;flex-wrap: wrap;" id="text">BEST <br> BURGERS..
+         </h2 >
+        
+            <img src="./burger.png" alt="" style="padding-top: 30px;padding-left: 660px; height: 800px;width: 1070px;">
+       
+
+        <img src="./fork and knife.png" id="cloud-left" >
+        <img src="" id="cloud-right"style="padding-top: 580px;  ">
+
+        <img src="./cloud-right.png" id="mountains">
+    </section>
+
+</br></br></br>
+
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2></br></br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus obcaecati eius nihil officia consequatur numquam nemo praesentium. Quos voluptatem et consectetur corporis dicta reiciendis facere fuga, magnam maiores numquam, neque dolor porro expedita facilis autem fugiat ab? Cumque temporibus atque doloribus unde, aut voluptatem. Impedit esse tempore obcaecati animi cupiditate dicta alias quaerat expedita minus quas ex, quo et nihil accusantium iure inventore eveniet!</br></br></br>
+        </p>
+    </section>
+    
+    <script src="logic.js"></script>
+
+
+    
+</body>
+</html>
